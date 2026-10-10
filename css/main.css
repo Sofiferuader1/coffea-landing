@@ -1,0 +1,21 @@
+
+/* GOOGLE FONTS */
+
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&family=Playfair+Display:wght@500;600;700&family=Poppins:wght@400;500;600&family=Reggae+One&display=swap");
+
+
+/* ESTILOS GENERALES */
+
+@import url("tokens.css");
+@import url("base.css");
+@import url("layout.css");
+
+/* COMPONENTES */
+
+@import url("components/categories.css");
+@import url("components/product-card.css");
+@import url("components/carousel.css");
+@import url("components/promo.css");
+@import url("components/testimonial-card.css");
+@import url("components/newsletter.css");
+@import url("components/footer.css");

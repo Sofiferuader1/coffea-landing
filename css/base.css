@@ -1,0 +1,73 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--color-bg);
+    color: var(--color-espresso);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    font: inherit;
+    cursor: pointer;
+}
+
+:focus-visible {
+    outline: 2px solid var(--color-espresso);
+    outline-offset: 3px;
+}
+
+
+/* ELEMENTOS VISIBLES SOLO PARA LECTORES DE PANTALLA */
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* ENLACE PARA SALTAR AL CONTENIDO */
+
+.skip-link {
+    position: absolute;
+    left: 16px;
+    top: -100px;
+    z-index: 1000;
+
+    padding: 12px 20px;
+    background-color: var(--color-white);
+    color: var(--color-espresso);
+    border-radius: var(--radius-btn);
+}
+
+.skip-link:focus {
+    top: 16px;
+}
+
+/* =====================================
+   AJUSTES GENERALES RESPONSIVE
+   ===================================== */
+
+
+img {
+    max-width: 100%;
+}

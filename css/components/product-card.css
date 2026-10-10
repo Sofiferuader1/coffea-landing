@@ -1,0 +1,208 @@
+
+/* =====================================
+   COFFEA - TARJETAS DE PRODUCTOS
+   ===================================== */
+
+.product-card {
+    flex: 0 0 366px;
+    width: 366px;
+    min-height: 570px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    padding: 16px;
+
+    background-color: rgba(226, 217, 200, 0.2);
+    border: 1.5px solid var(--color-sand);
+    border-radius: var(--radius-card);
+
+    scroll-snap-align: start;
+    transition: box-shadow 0.2s ease;
+}
+
+/* IMAGEN DEL PRODUCTO */
+
+.product-card__image {
+    position: relative;
+    width: 100%;
+    height: 364px;
+    flex-shrink: 0;
+
+    border-radius: var(--radius-img);
+    overflow: hidden;
+}
+
+.product-card__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    transition: transform 0.2s ease;
+}
+
+/* CORAZÓN DE FAVORITOS */
+
+.product-card__favorite-input {
+    position: absolute;
+    width: 33px;
+    height: 33px;
+    top: 18px;
+    right: 18px;
+
+    opacity: 0;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.product-card__favorite {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+
+    width: 33px;
+    height: 33px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--color-white);
+    color: var(--color-maroon);
+
+    border-radius: 50%;
+    font-size: 27px;
+    cursor: pointer;
+}
+
+.product-card__favorite-input:checked
++ .product-card__favorite {
+    background-color: var(--color-maroon);
+    color: var(--color-white);
+}
+
+.product-card__favorite-input:checked
++ .product-card__favorite span {
+    font-size: 0;
+}
+
+.product-card__favorite-input:checked
++ .product-card__favorite span::after {
+    content: "♥";
+    font-size: 25px;
+}
+
+.product-card__favorite-input:focus-visible
++ .product-card__favorite {
+    outline: 2px solid var(--color-espresso);
+    outline-offset: 3px;
+}
+
+/* NOMBRE DEL PRODUCTO */
+
+.product-card__title {
+    font-family: var(--font-body);
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 1.1;
+
+    color: var(--color-espresso);
+}
+
+/* DESCRIPCIÓN */
+
+.product-card__description {
+    font-family: var(--font-body);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+
+    color: var(--color-maroon);
+}
+
+/* PRECIO Y BOTÓN */
+
+.product-card__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+
+    margin-top: auto;
+}
+
+.product-card__price {
+    font-family: var(--font-ui);
+    font-size: 20px;
+    font-weight: 600;
+    white-space: nowrap;
+
+    color: var(--color-maroon);
+}
+
+.product-card__button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 10px 26px;
+
+    background-color: var(--color-maroon);
+    color: var(--color-white);
+
+    border-radius: var(--radius-btn);
+
+    font-family: var(--font-ui);
+    font-size: 14px;
+    font-weight: 500;
+    white-space: nowrap;
+
+    transition: transform 0.2s ease;
+}
+
+/* EFECTOS HOVER */
+
+@media (hover: hover) {
+    .product-card:hover {
+        box-shadow: 0 8px 20px rgba(48, 38, 28, 0.12);
+    }
+
+    .product-card:hover .product-card__image img {
+        transform: scale(1.03);
+    }
+
+    .product-card__button:hover {
+        transform: translateY(-2px);
+    }
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 767px) {
+    .product-card {
+        flex-basis: min(85vw, 366px);
+        width: min(85vw, 366px);
+    }
+
+    .product-card__image {
+        height: 300px;
+    }
+
+    .product-card__title {
+        font-size: 30px;
+    }
+
+    .product-card__description {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .product-card,
+    .product-card__image img,
+    .product-card__button {
+        transition: none;
+    }
+}

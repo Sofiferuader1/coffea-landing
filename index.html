@@ -1,0 +1,922 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Discover the best coffee and desserts at Coffea.">
+
+    <title>Coffea | Coffee Shop</title>
+
+    <!-- CONEXIÓN CON CSS -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <!-- ACCESIBILIDAD -->
+    <a href="#main" class="skip-link">
+        Skip to content
+    </a>
+
+    <!-- =====================================
+         HEADER - NAVEGACIÓN
+         ===================================== -->
+
+    <header class="header">
+
+        <a href="#home" class="header__logo">
+            coffea
+        </a>
+
+        <nav class="header__nav" aria-label="Main navigation">
+            <a href="#home">HOME</a>
+            <a href="#coffee">COFFEE</a>
+            <a href="#dessert">BAKERY</a>
+            <a href="#coffee">SHOP</a>
+            <a href="#about">ABOUT</a>
+            <a href="#newsletter">LOGIN</a>
+        </nav>
+
+        <button class="header__search"
+                type="button"
+                aria-label="Search">
+            &#128269;
+        </button>
+
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main id="main">
+
+        <!-- =====================================
+             1. HERO - PORTADA
+             ===================================== -->
+
+        <section class="hero"
+                 id="home"
+                 aria-labelledby="hero-title">
+
+            <div class="hero__content">
+
+                <p class="hero__welcome">WELCOME</p>
+
+                <h1 id="hero-title">
+                    We serve the richest coffee in the city!
+                </h1>
+
+                <p class="hero__description">
+                    Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore.
+                </p>
+
+                <a href="#coffee" class="hero__button">
+                    Order Now
+                </a>
+
+            </div>
+
+        </section>
+
+        <!-- =====================================
+             2. CATEGORÍAS
+             ===================================== -->
+
+        <section class="categories"
+                 aria-label="Coffee and dessert categories">
+
+            <ul class="categories__list">
+
+                <li>
+                    <a href="#coffee" class="categories__item">
+                        <img src="assets/icons/cat-hot-coffee.svg"
+                             alt="" width="82" height="82">
+                        <span>Hot Coffee</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#coffee" class="categories__item">
+                        <img src="assets/icons/cat-cold-coffee.svg"
+                             alt="" width="82" height="82">
+                        <span>Cold Coffee</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#coffee" class="categories__item">
+                        <img src="assets/icons/cat-cup-coffee.svg"
+                             alt="" width="82" height="82">
+                        <span>Cup Coffee</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#dessert" class="categories__item">
+                        <img src="assets/icons/cat-dessert.svg"
+                             alt="" width="82" height="82">
+                        <span>Dessert</span>
+                    </a>
+                </li>
+
+            </ul>
+
+        </section>
+
+        <!-- =====================================
+             3. OUR SPECIAL COFFEE
+             ===================================== -->
+
+        <section class="products"
+                 id="coffee"
+                 aria-labelledby="coffee-title">
+
+            <h2 class="products__title" id="coffee-title">
+                OUR SPECIAL COFFEE
+            </h2>
+<div class="products__slider">
+
+    <a href="#coffee-1"
+       class="products__arrow products__arrow--left"
+       aria-label="Go to first coffee">
+        <img src="assets/icons/arrow.svg"
+             alt="" width="71" height="71">
+    </a>
+            <div class="products__carousel">
+
+                <!-- CAFÉ 1 -->
+                <article class="product-card" id="coffee-1">
+
+                    <div class="product-card__image">
+
+                        <img src="assets/img/coffee-1.png"
+                             alt="Cup of freshly prepared coffee"
+                             width="334" height="364"
+                             loading="lazy">
+
+                        <input type="checkbox"
+                               id="favorite-1"
+                               class="product-card__favorite-input"
+                               aria-label="Add coffee 1 to favorites">
+
+                        <label for="favorite-1"
+                               class="product-card__favorite">
+                            <span aria-hidden="true">♡</span>
+                        </label>
+
+                    </div>
+
+                    <h3 class="product-card__title">Lungo coffee</h3>
+
+                    <p class="product-card__description">
+                        Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit.
+                    </p>
+
+                    <div class="product-card__bottom">
+
+                        <data value="200" class="product-card__price">
+                            Rs. 200
+                        </data>
+
+                        <a href="#newsletter" class="product-card__button">
+                            Order Now
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <!-- CAFÉ 2 -->
+                <article class="product-card" id="coffee-2">
+
+                    <div class="product-card__image">
+
+                        <img src="assets/img/coffee-2.png"
+                             alt="Coffee surrounded by green leaves"
+                             width="334" height="364"
+                             loading="lazy">
+
+                        <input type="checkbox"
+                               id="favorite-2"
+                               class="product-card__favorite-input"
+                               aria-label="Add coffee 2 to favorites">
+
+                        <label for="favorite-2"
+                               class="product-card__favorite">
+                            <span aria-hidden="true">♡</span>
+                        </label>
+
+                    </div>
+
+                    <h3 class="product-card__title">Lungo coffee</h3>
+
+                    <p class="product-card__description">
+                        Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit.
+                    </p>
+
+                    <div class="product-card__bottom">
+
+                        <data value="200" class="product-card__price">
+                            Rs. 200
+                        </data>
+
+                        <a href="#newsletter" class="product-card__button">
+                            Order Now
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <!-- CAFÉ 3 -->
+                <article class="product-card" id="coffee-3">
+
+                    <div class="product-card__image">
+
+                        <img src="assets/img/coffee-3.png"
+                             alt="Cup of latte coffee with latte art"
+                             width="334" height="364"
+                             loading="lazy">
+
+                        <input type="checkbox"
+                               id="favorite-3"
+                               class="product-card__favorite-input"
+                               aria-label="Add coffee 3 to favorites">
+
+                        <label for="favorite-3"
+                               class="product-card__favorite">
+                            <span aria-hidden="true">♡</span>
+                        </label>
+
+                    </div>
+
+                    <h3 class="product-card__title">Lungo coffee</h3>
+
+                    <p class="product-card__description">
+                        Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit.
+                    </p>
+
+                    <div class="product-card__bottom">
+
+                        <data value="200" class="product-card__price">
+                            Rs. 200
+                        </data>
+
+                        <a href="#newsletter" class="product-card__button">
+                            Order Now
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <!-- CAFÉ 4 -->
+                <article class="product-card" id="coffee-4">
+
+                    <div class="product-card__image">
+
+                        <img src="assets/img/coffee-4.png"
+                             alt="Cup of cappuccino with heart latte art"
+                             width="334" height="364"
+                             loading="lazy">
+
+                        <input type="checkbox"
+                               id="favorite-4"
+                               class="product-card__favorite-input"
+                               aria-label="Add coffee 4 to favorites">
+
+                        <label for="favorite-4"
+                               class="product-card__favorite">
+                            <span aria-hidden="true">♡</span>
+                        </label>
+
+                    </div>
+
+                    <h3 class="product-card__title">Lungo coffee</h3>
+
+                    <p class="product-card__description">
+                        Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit.
+                    </p>
+
+                    <div class="product-card__bottom">
+
+                        <data value="200" class="product-card__price">
+                            Rs. 200
+                        </data>
+
+                        <a href="#newsletter" class="product-card__button">
+                            Order Now
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+    <a href="#coffee-4"
+       class="products__arrow products__arrow--right"
+       aria-label="Go to last coffee">
+        <img src="assets/icons/arrow.svg"
+             alt="" width="71" height="71">
+    </a>
+
+</div>
+        </section>
+
+        <!-- =====================================
+             4. OUR SPECIAL DESSERT
+             ===================================== -->
+
+        <section class="products"
+                 id="dessert"
+                 aria-labelledby="dessert-title">
+
+            <h2 class="products__title" id="dessert-title">
+                OUR SPECIAL DESSERT
+            </h2>
+<div class="products__slider">
+    <a href="#dessert-1"
+       class="products__arrow products__arrow--left"
+       aria-label="Go to first dessert">
+        <img src="assets/icons/arrow.svg" alt="">
+    </a>
+            <div class="products__carousel">
+
+                <!-- CHEESECAKE -->
+                <article class="product-card" id="dessert-1">
+
+                    <div class="product-card__image">
+
+                        <img src="assets/img/dessert-1.jpg"
+                             alt="Slice of cheesecake"
+                             width="334" height="364"
+                             loading="lazy">
+
+                        <input type="checkbox"
+                               id="favorite-dessert-1"
+                               class="product-card__favorite-input"
+                               aria-label="Add cheesecake to favorites">
+
+                        <label for="favorite-dessert-1"
+                               class="product-card__favorite">
+                            <span aria-hidden="true">♡</span>
+                        </label>
+
+                    </div>
+
+                    <h3 class="product-card__title">Cheesecake</h3>
+
+                    <p class="product-card__description">
+                        Creamy cheesecake with a delicious biscuit crust.
+                    </p>
+
+                    <div class="product-card__bottom">
+
+                        <data value="200" class="product-card__price">
+                            Rs. 200
+                        </data>
+
+                        <a href="#newsletter" class="product-card__button">
+                            Order Now
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <!-- BROWNIE -->
+                <article class="product-card" id="dessert-2">
+
+                    <div class="product-card__image">
+
+                        <img src="assets/img/dessert-2.jpg"
+                             alt="Chocolate brownie"
+                             width="334" height="364"
+                             loading="lazy">
+
+                        <input type="checkbox"
+                               id="favorite-dessert-2"
+                               class="product-card__favorite-input"
+                               aria-label="Add brownie to favorites">
+
+                        <label for="favorite-dessert-2"
+                               class="product-card__favorite">
+                            <span aria-hidden="true">♡</span>
+                        </label>
+
+                    </div>
+
+                    <h3 class="product-card__title">Brownie</h3>
+
+                    <p class="product-card__description">
+                        Rich chocolate brownie with a soft and fudgy center.
+                    </p>
+
+                    <div class="product-card__bottom">
+
+                        <data value="200" class="product-card__price">
+                            Rs. 200
+                        </data>
+
+                        <a href="#newsletter" class="product-card__button">
+                            Order Now
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <!-- LEMON PIE -->
+                <article class="product-card" id="dessert-3">
+
+                    <div class="product-card__image">
+
+                        <img src="assets/img/dessert-3.jpg"
+                             alt="Slice of lemon pie with meringue"
+                             width="334" height="364"
+                             loading="lazy">
+
+                        <input type="checkbox"
+                               id="favorite-dessert-3"
+                               class="product-card__favorite-input"
+                               aria-label="Add lemon pie to favorites">
+
+                        <label for="favorite-dessert-3"
+                               class="product-card__favorite">
+                            <span aria-hidden="true">♡</span>
+                        </label>
+
+                    </div>
+
+                    <h3 class="product-card__title">Lemon Pie</h3>
+
+                    <p class="product-card__description">
+                        Fresh lemon cream topped with fluffy toasted meringue.
+                    </p>
+
+                    <div class="product-card__bottom">
+
+                        <data value="200" class="product-card__price">
+                            Rs. 200
+                        </data>
+
+                        <a href="#newsletter" class="product-card__button">
+                            Order Now
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <!-- RED VELVET -->
+                <article class="product-card" id="dessert-4">
+
+                    <div class="product-card__image">
+
+                        <img src="assets/img/dessert-4.jpg"
+                             alt="Slice of red velvet cake"
+                             width="334" height="364"
+                             loading="lazy">
+
+                        <input type="checkbox"
+                               id="favorite-dessert-4"
+                               class="product-card__favorite-input"
+                               aria-label="Add red velvet to favorites">
+
+                        <label for="favorite-dessert-4"
+                               class="product-card__favorite">
+                            <span aria-hidden="true">♡</span>
+                        </label>
+
+                    </div>
+
+                    <h3 class="product-card__title">Red Velvet</h3>
+
+                    <p class="product-card__description">
+                        Soft red velvet cake with creamy vanilla frosting.
+                    </p>
+
+                    <div class="product-card__bottom">
+
+                        <data value="200" class="product-card__price">
+                            Rs. 200
+                        </data>
+
+                        <a href="#newsletter" class="product-card__button">
+                            Order Now
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+<a href="#dessert-4"
+   class="products__arrow products__arrow--right"
+   aria-label="Go to last dessert">
+    <img src="assets/icons/arrow.svg" alt="">
+</a>
+
+</div>
+        </section>
+
+        <!-- =====================================
+             5. PROMOCIÓN - COFFEE BEANS
+             ===================================== -->
+
+        <section class="promo" aria-labelledby="promo-title">
+
+            <img src="assets/img/promo-hand.png"
+                 alt=""
+                 class="promo__hand"
+                 width="520" height="335"
+                 loading="lazy">
+
+            <div class="promo__content">
+
+                <h2 class="promo__title" id="promo-title">
+                    Check Out Our Best Coffee Beans
+                </h2>
+
+                <a href="#coffee" class="promo__button">
+                    Explore Our Products
+                    <span aria-hidden="true">»</span>
+                </a>
+
+            </div>
+
+            <img src="assets/img/promo-beans.png"
+                 alt=""
+                 class="promo__beans"
+                 width="503" height="335"
+                 loading="lazy">
+
+        </section>
+
+        <!-- =====================================
+             6. TESTIMONIOS - OUR HAPPY CUSTOMERS
+             ===================================== -->
+
+        <section class="testimonials"
+                 id="about"
+                 aria-labelledby="testimonials-title">
+
+            <p class="testimonials__intro">
+                Come and Join
+            </p>
+
+            <h2 class="testimonials__title"
+                id="testimonials-title">
+                OUR HAPPY CUSTOMERS
+            </h2>
+
+            <div class="testimonials__list">
+
+                <!-- TESTIMONIO 1 -->
+                <figure class="testimonial-card" id="t-1">
+
+                    <div class="testimonial-card__header">
+
+                        <img src="assets/img/avatar-1.png"
+                             alt=""
+                             class="testimonial-card__avatar"
+                             width="56" height="56"
+                             loading="lazy">
+
+                        <div class="testimonial-card__info">
+
+                            <p class="testimonial-card__name">
+                                James Smith
+                            </p>
+
+                            <p class="testimonial-card__role">
+                                Entrepreneur
+                            </p>
+
+                        </div>
+
+                        <span class="testimonial-card__rating"
+                              role="img"
+                              aria-label="4 out of 5 stars">
+                            ★★★★☆
+                        </span>
+
+                    </div>
+
+                    <blockquote class="testimonial-card__quote">
+                        Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit.
+                        Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit.
+                    </blockquote>
+
+                    <figcaption class="visually-hidden">
+                        Review by James Smith
+                    </figcaption>
+
+                </figure>
+
+                <!-- TESTIMONIO 2 - DESTACADO -->
+                <figure class="testimonial-card testimonial-card--featured"
+                        id="t-2">
+
+                    <div class="testimonial-card__header">
+
+                        <img src="assets/img/avatar-1.png"
+                             alt=""
+                             class="testimonial-card__avatar"
+                             width="56" height="56"
+                             loading="lazy">
+
+                        <div class="testimonial-card__info">
+
+                            <p class="testimonial-card__name">
+                                James Smith
+                            </p>
+
+                            <p class="testimonial-card__role">
+                                Entrepreneur
+                            </p>
+
+                        </div>
+
+                        <span class="testimonial-card__rating"
+                              role="img"
+                              aria-label="5 out of 5 stars">
+                            ★★★★★
+                        </span>
+
+                    </div>
+
+                    <blockquote class="testimonial-card__quote">
+                        Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit.
+                        Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit.
+                        Lorem ipsum dolor sit amet.
+                    </blockquote>
+
+                    <figcaption class="visually-hidden">
+                        Review by James Smith
+                    </figcaption>
+
+                </figure>
+
+                <!-- TESTIMONIO 3 -->
+                <figure class="testimonial-card" id="t-3">
+
+                    <div class="testimonial-card__header">
+
+                        <img src="assets/img/avatar-1.png"
+                             alt=""
+                             class="testimonial-card__avatar"
+                             width="56" height="56"
+                             loading="lazy">
+
+                        <div class="testimonial-card__info">
+
+                            <p class="testimonial-card__name">
+                                James Smith
+                            </p>
+
+                            <p class="testimonial-card__role">
+                                Entrepreneur
+                            </p>
+
+                        </div>
+
+                        <span class="testimonial-card__rating"
+                              role="img"
+                              aria-label="4 out of 5 stars">
+                            ★★★★☆
+                        </span>
+
+                    </div>
+
+                    <blockquote class="testimonial-card__quote">
+                        Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit.
+                        Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit.
+                    </blockquote>
+
+                    <figcaption class="visually-hidden">
+                        Review by James Smith
+                    </figcaption>
+
+                </figure>
+
+            </div>
+
+            <!-- PAGINADOR -->
+            <nav class="testimonials__dots"
+                 aria-label="Customer testimonials">
+
+                <a href="#t-1"
+                   class="testimonials__dot"
+                   aria-label="Go to testimonial 1"></a>
+
+                <a href="#t-2"
+                   class="testimonials__dot"
+                   aria-label="Go to testimonial 2"></a>
+
+                <a href="#t-3"
+                   class="testimonials__dot"
+                   aria-label="Go to testimonial 3"></a>
+
+            </nav>
+
+        </section>
+
+<!-- =====================================
+     7. NEWSLETTER
+     ===================================== -->
+
+<section class="newsletter"
+         id="newsletter"
+         aria-labelledby="newsletter-title">
+
+    <!-- GRANOS IZQUIERDA -->
+    <img src="assets/img/newsletter-beans.png"
+         alt=""
+         class="newsletter__beans newsletter__beans--left"
+         width="482"
+         height="321"
+         loading="lazy">
+
+    <!-- CONTENIDO -->
+    <div class="newsletter__content">
+
+        <h2 class="newsletter__title"
+            id="newsletter-title">
+            Join in and get 15% off!
+        </h2>
+
+        <p class="newsletter__description">
+            Subscribe to our newsletter and get 15% off
+            your first order.
+        </p>
+
+        <form class="newsletter__form" action="#" method="get">
+
+            <label for="newsletter-email"
+                   class="visually-hidden">
+                Email address
+            </label>
+
+            <input
+                type="email"
+                id="newsletter-email"
+                name="email"
+                class="newsletter__input"
+                placeholder="✉  Email address"
+                autocomplete="email"
+                required>
+
+            <button type="submit"
+                    class="newsletter__button">
+                Subscribe
+            </button>
+
+        </form>
+
+    </div>
+
+    <!-- GRANOS DERECHA -->
+    <img src="assets/img/newsletter-beans.png"
+         alt=""
+         class="newsletter__beans newsletter__beans--right"
+         width="482"
+         height="321"
+         loading="lazy">
+
+</section>
+
+    </main>
+
+<!-- =====================================
+     9. FOOTER - PIE DE PÁGINA
+     ===================================== -->
+
+<footer class="footer" id="footer">
+
+    <div class="footer__container">
+
+        <!-- LOGO -->
+        <a href="#home" class="footer__logo">
+            coffea
+        </a>
+
+        <!-- PRIVACY -->
+        <nav class="footer__column" aria-label="Privacy links">
+
+            <h3 class="footer__title">PRIVACY</h3>
+
+            <ul class="footer__links">
+                <li><a href="#footer">Privacy Policy</a></li>
+                <li><a href="#footer">Cookie Policy</a></li>
+                <li><a href="#footer">Terms of Use</a></li>
+            </ul>
+
+        </nav>
+
+        <!-- SERVICES -->
+        <nav class="footer__column" aria-label="Services links">
+
+            <h3 class="footer__title">SERVICES</h3>
+
+            <ul class="footer__links">
+                <li><a href="#coffee">Shop</a></li>
+                <li><a href="#coffee">Order Online</a></li>
+                <li><a href="#dessert">Bakery</a></li>
+            </ul>
+
+        </nav>
+
+        <!-- ABOUT US -->
+        <nav class="footer__column" aria-label="About us links">
+
+            <h3 class="footer__title">ABOUT US</h3>
+
+            <ul class="footer__links">
+                <li><a href="#about">Find a Location</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#about">Our Story</a></li>
+            </ul>
+
+        </nav>
+
+        <!-- INFORMATION -->
+        <nav class="footer__column" aria-label="Information links">
+
+            <h3 class="footer__title">INFORMATION</h3>
+
+            <ul class="footer__links">
+                <li><a href="#footer">Plans & Pricing</a></li>
+                <li><a href="#coffee">Sell Your Products</a></li>
+                <li><a href="#footer">Jobs</a></li>
+            </ul>
+
+        </nav>
+
+        <!-- REDES SOCIALES -->
+        <div class="footer__column">
+
+            <h3 class="footer__title">SOCIAL MEDIA</h3>
+
+            <div class="footer__socials">
+
+                <a href="https://x.com/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="X Twitter">
+
+                    <img src="assets/icons/social-twitter.svg"
+                         alt="" width="24" height="24">
+                </a>
+
+                <a href="https://www.instagram.com/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="Instagram">
+
+                    <img src="assets/icons/social-instagram.svg"
+                         alt="" width="24" height="24">
+                </a>
+
+                <a href="https://www.facebook.com/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="Facebook">
+
+                    <img src="assets/icons/social-facebook.svg"
+                         alt="" width="24" height="24">
+                </a>
+
+                <a href="https://www.linkedin.com/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="LinkedIn">
+
+                    <img src="assets/icons/social-linkedin.svg"
+                         alt="" width="24" height="24">
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+</body>
+</html>

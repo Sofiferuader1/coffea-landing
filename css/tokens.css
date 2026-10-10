@@ -1,0 +1,20 @@
+
+:root {
+    --color-espresso: #30261C;
+    --color-maroon: #2A0000;
+    --color-sand: #E2D9C8;
+    --color-bg: #F1F0EE;
+    --color-muted: #544A3E;
+    --color-white: #FFFFFF;
+
+    --font-display: "Playfair Display", serif;
+    --font-body: "Outfit", sans-serif;
+    --font-ui: "Poppins", sans-serif;
+
+    --radius-pill: 100px;
+    --radius-card: 18px;
+    --radius-img: 12px;
+    --radius-btn: 8px;
+
+    --container: 1444px;
+}

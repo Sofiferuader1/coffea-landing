@@ -1,0 +1,185 @@
+
+/* =====================================
+   COFFEA - NEWSLETTER
+   ===================================== */
+
+.newsletter {
+    position: relative;
+    width: 100%;
+    min-height: 320px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 48px 24px;
+    background-color: var(--color-sand);
+    overflow: hidden;
+}
+
+/* GRANOS DECORATIVOS */
+
+.newsletter__beans {
+    position: absolute;
+    width: min(25%, 482px);
+    height: 100%;
+    object-fit: contain;
+    pointer-events: none;
+}
+
+.newsletter__beans--left {
+    left: 0;
+    bottom: 0;
+    object-position: left center;
+}
+
+.newsletter__beans--right {
+    right: 0;
+    bottom: 0;
+    object-position: right center;
+    transform: scaleX(-1);
+}
+
+/* CONTENIDO CENTRAL */
+
+.newsletter__content {
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+    max-width: 650px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* TÍTULO */
+
+.newsletter__title {
+    font-family: var(--font-ui);
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--color-espresso);
+    margin-bottom: 12px;
+}
+
+/* SUBTÍTULO */
+
+.newsletter__description {
+    font-family: var(--font-ui);
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--color-espresso);
+    margin-bottom: 28px;
+}
+
+/* FORMULARIO */
+
+.newsletter__form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    width: 100%;
+}
+
+.newsletter__input {
+    width: 364px;
+    max-width: 100%;
+    min-height: 44px;
+
+    padding: 10px 20px;
+
+    background-color: var(--color-bg);
+    color: var(--color-espresso);
+
+    border: 1px solid transparent;
+    border-radius: var(--radius-pill);
+
+    font-family: var(--font-ui);
+    font-size: 14px;
+}
+
+.newsletter__input::placeholder {
+    color: var(--color-muted);
+}
+
+/* BOTÓN */
+
+.newsletter__button {
+    min-height: 44px;
+    padding: 10px 28px;
+
+    background-color: var(--color-espresso);
+    color: var(--color-bg);
+
+    border: none;
+    border-radius: var(--radius-pill);
+
+    font-family: var(--font-ui);
+    font-size: 14px;
+    font-weight: 500;
+
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.newsletter__button:hover {
+    transform: translateY(-2px);
+}
+
+/* VALIDACIÓN DEL EMAIL */
+
+.newsletter__input:user-invalid {
+    border-color: #B42318;
+}
+
+/* RESPONSIVE TABLET */
+
+@media (max-width: 1023px) {
+    .newsletter__beans {
+        width: 20%;
+        opacity: 0.6;
+    }
+}
+
+/* RESPONSIVE CELULAR */
+
+@media (max-width: 767px) {
+    .newsletter {
+        padding: 48px 16px;
+    }
+
+    .newsletter__beans {
+        display: none;
+    }
+
+    .newsletter__title {
+        font-size: 26px;
+    }
+
+    .newsletter__description {
+        font-size: 14px;
+    }
+
+    .newsletter__form {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .newsletter__input,
+    .newsletter__button {
+        width: 100%;
+        max-width: 364px;
+        min-height: 48px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .newsletter__button {
+        transition: none;
+    }
+}
