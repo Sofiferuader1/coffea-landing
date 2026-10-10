@@ -80,15 +80,33 @@ coffea-landing/
 
 No requiere instalación de dependencias.
 
+
 ## Estado del proyecto
 
-Las nueve secciones principales están desarrolladas.
+El proyecto cuenta con las nueve secciones principales desarrolladas y se encuentra publicado en Netlify.
 
-Pendiente:
-- Completar ajustes responsive.
-- Revisar accesibilidad.
-- Realizar validaciones W3C y Lighthouse.
-- Publicar el proyecto en Netlify.
+### Enlaces del proyecto
+
+- **Página web:** https://stupendous-churros-962deb.netlify.app/
+- **Repositorio GitHub:** https://github.com/Sofiferuader1/coffea-landing
+
+### Funcionalidades implementadas
+
+- Estructura HTML5 y estilos CSS3.
+- Diseño basado en Figma.
+- Tarjetas de cafés y postres.
+- Corazones de favoritos interactivos.
+- Carruseles con desplazamiento horizontal.
+- Formulario de newsletter con validación HTML5.
+- Navegación interna.
+- Adaptación parcial a dispositivos móviles.
+
+### Limitaciones conocidas
+
+- Algunos elementos presentan desbordamiento horizontal en determinados tamaños de pantalla.
+- El menú hamburguesa para celulares no fue implementado.
+- Quedaron pendientes algunos ajustes visuales en la versión móvil.
+- No se completaron las validaciones finales de Lighthouse y W3C.
 
 ## Autoría
 
